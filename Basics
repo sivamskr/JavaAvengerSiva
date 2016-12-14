@@ -9,6 +9,46 @@ Object(instance of a class) is an entity of a Class used for a specific purpose
 
 
 
+<Class>  reference = new  < constructor>
+
+
+Class
+Access modifiers
+Non Access modifiers
+
+Normal Class   - Can only be public or default
+Nested Class   - Can be of any type 
+  - static
+  - Non static (Inner)
+      + Inside class
+      + Inside Method
+      + Anonymous
+      
+      
+      
+There are several  reasons for using nested classes, among them:
+-It is a way of logically grouping classes that are only used in one place.
+-It increases encapsulation.
+-Nested classes can lead to more readable and maintainable code.
+-Child to parent class connection is simpler as it visually illustrates the variables  and methods of each class
+
+
+Inner classes are best for the purpose of logically grouping classes that are used in one-place. For example, if you want to create class which is used by ONLY enclosing class, then it doesn't make sense to create a separate file for that. Instead you can add it as "inner class"As per javadoc:Compelling reasons for using nested classes include the following:It is a way of logically grouping classes that are only used in one  place. It increases encapsulation. It can lead to more readable and maintainable code.
+
+
+
+Properties
+Access modifiers
+Non Access modifiers
+
+Methods
+Access modifiers
+Non Access modifiers
+
+
+
+
+
 
 
 
