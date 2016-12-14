@@ -1,0 +1,34 @@
+package com.java.avenger.siva;
+
+
+
+class SuperClass {
+
+	void print() {
+		System.out.println("Super");
+	}
+
+}
+
+class SubClass extends SuperClass {	
+	static void print() {
+		System.out.println("Sub");
+	}
+
+}
+
+Super Class     Sub Class          Output
+--------------------------------------------------
+
+*Non Access Modifiers*
+
+non static      static              compile time error         //static method cannot hide instance method
+static          static              allowed
+
+*Access Modifiers*
+public          private/                                       //cannot reduce visibility
+                protected/
+                
+*Exceptions*           
+checked excpetion 
+                
