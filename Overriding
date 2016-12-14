@@ -25,10 +25,25 @@ Super Class     Sub Class          Output
 non static      static              compile time error         //static method cannot hide instance method
 static          static              allowed
 
-*Access Modifiers*
+*Access Modifiers* [cannot have weaker access than super class method]
+Order of Access Modifiers private <  default  < protected  < public 
+
+Compile error
+-----------------
 public          private/                                       //cannot reduce visibility
                 protected/
-                
+		default
+		
+		
+valid Scenario
+-------------------
+private      private/default/protected/public             
+default      default/protected/public
+protected    protected/public
+public       public
+
+
 *Exceptions*           
-checked excpetion 
-                
+checked 
+
+unchecked     unchecked
