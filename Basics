@@ -1,1 +1,4 @@
 
+Class:
+
+It's a encapsulation of variables and methods into single entity which acts as a bluepoint for the copies (objects) to be used furthur in the code.
