@@ -1,0 +1,30 @@
+package com.java.avenger.siva;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+	public static void main(String[] args) {
+
+		List<String> stockList = new ArrayList<String>();
+		stockList.add("stock1");
+		stockList.add("stock2");
+
+		System.out.println(stockList.toArray());
+		String[] stockArr2 = (String[]) stockList.toArray(new String[0]);
+		System.out.println(stockArr2);
+		for (String s : stockArr2)
+			System.out.println(s);
+
+		String[] stockArr1 = (String[]) stockList.toArray();
+		System.out.println(stockArr1);
+
+		//
+		String[] stockArr = new String[stockList.size()];
+		stockArr = stockList.toArray(stockArr);
+
+		for (String s : stockArr)
+			System.out.println(s);
+
+	}
+}
