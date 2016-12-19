@@ -1,0 +1,48 @@
+package com.java.avenger.siva;
+
+public class Course {
+	public static void main(String[] args) {
+
+		SuperClass sc = new SubClass();
+
+		// sc reference Cannot call the print()
+
+	}
+}
+
+/*
+ * private void print() { System.out.println("Super"); }
+ */
+
+class SuperClass {
+	public SuperClass print() {
+		System.out.println("Super");
+		return null;
+	}
+
+}
+
+class SubClass extends SuperClass {
+	@Override
+	public SubClass print() {
+		System.out.println("Super");
+		return null;
+	}
+
+}
+
+interface Interface1 {
+	public void method();
+}
+
+abstract class Parent {
+	protected abstract void method();
+}
+
+class Child extends Parent implements Interface1 {
+	@Override
+	public void method() {
+	}
+	// This would be impossible if the visibility of method() in class
+	// Parent could not be increased.
+}
